@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Nav from './contents/Nav'
+import Section from './contents/Section'
+import Parallax from './contents/Parallax'
+import CustonForm from './contents/CustonForm'
+import Tabs from './contents/Tabs'
+import Footer from './contents/Hero'
+import Button from './contents/Button'
+import './App.css'
+import src1 from './img/pic2.jpg'
+import src2 from './img/pic5.jpg'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Nav/>
+    <Section/>
+    <Button/>
+    <Parallax src={src1}/>
+    <Tabs/>
+    <Parallax src={src2}/>
+    <CustonForm/>
+    <Footer/>
+    </>
   );
 }
 
